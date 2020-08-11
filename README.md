@@ -1,2 +1,2 @@
 # Python
-This is a repository where I keep python scripts written by me.
+This is the repository where I keep the python scripts that I have written.
