@@ -23,15 +23,15 @@ if __name__ == '__main__':
 
   usage = []
   paths = []
-
+#You can uncomment print functions to  debug the code and also you can add more.
   for entry in os.scandir(directory):
-    print(entry.path)
+    #print(entry.path)
     if (entry.is_dir(follow_symlinks=False)):
       total = get_size(entry.path)
-      print(total)
+      #print(total)
       paths.append(entry.path)
       usage.append(total)
     usage_dict = {'directory' : paths, 'usage' : usage}
     df = pd.DataFrame(usage_dict)
-    print(df)
+    #print(df)
     df.to_csv("Disk_Usage_Report.csv")
